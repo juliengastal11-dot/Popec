@@ -17,8 +17,8 @@ const chapters = [
     testId: "manifesto-chapter-02",
     title: "L'exigence du mouvement, en salle",
     text: "Partenaire de Fitness Park à Béziers, je vous accompagne aussi entre quatre murs : burning, cross, hyrox. Des séances intenses, cadrées et progressives, pour construire un corps fort et durable.",
-    img: "/images/salle-skierg.png",
-    alt: "Séance de ski-erg en salle encadrée par le coach Popec",
+    img: "/images/coach-sled-pull.jpeg",
+    alt: "Popec en traction de corde lestée, entraînement fonctionnel en extérieur",
     tag: "Indoor",
   },
   {
@@ -26,8 +26,8 @@ const chapters = [
     testId: "manifesto-chapter-03",
     title: "Un suivi humain et mesurable",
     text: "Pas de programme copié-collé. Bilan initial, objectifs clairs, plan d'entraînement évolutif et réajustements constants. Votre progression se mesure, se célèbre et ne s'arrête jamais vraiment.",
-    img: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1200",
-    alt: "Paysage naturel de montagne et sentier de trail outdoor",
+    img: "/images/salle-skierg.png",
+    alt: "Séance de ski-erg en salle encadrée par le coach Popec",
     tag: "Suivi",
   },
 ];

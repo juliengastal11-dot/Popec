@@ -1,8 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { ArrowRight, Loader2, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Loader2, MapPin } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
+import { WA_BASE, WA_URL, WhatsAppIcon } from "@/components/landing/WhatsAppBubble";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
@@ -35,9 +36,11 @@ export default function Contact() {
         objective: form.objective,
         message: form.message.trim(),
       });
-      toast.success("Message envoyé !", {
-        description: "Popec vous recontacte très vite pour caler votre premier bilan.",
+      toast.success("Message prêt !", {
+        description: "WhatsApp s'ouvre : envoyez le message pour prévenir Popec directement.",
       });
+      const text = `Bonjour Popec ! Je suis ${form.name.trim()}. Objectif : ${form.objective}. ${form.message.trim()}`;
+      window.open(`${WA_BASE}${encodeURIComponent(text)}`, "_blank");
       setForm({ name: "", email: "", phone: "", objective: objectives[0], message: "" });
     } catch (err) {
       toast.error("Envoi impossible", {
@@ -85,12 +88,18 @@ export default function Contact() {
                 </span>
                 Béziers & alentours — salle Fitness Park et terrains outdoor
               </p>
-              <p className="flex items-center gap-3 text-sm text-sand/80">
-                <span className="w-9 h-9 rounded-full bg-sand/10 border border-sand/15 flex items-center justify-center shrink-0">
-                  <Mail size={15} className="text-ochre" />
+              <a
+                data-testid="contact-whatsapp-link"
+                href={WA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm text-sand/80 transition-colors duration-300 hover:text-sand"
+              >
+                <span className="w-9 h-9 rounded-full bg-[#25D366]/20 border border-[#25D366]/40 flex items-center justify-center shrink-0 text-[#25D366]">
+                  <WhatsAppIcon size={15} />
                 </span>
-                Réponse garantie sous 48 h
-              </p>
+                WhatsApp : 07 78 05 06 44 — réponse rapide
+              </a>
             </div>
           </Reveal>
         </div>

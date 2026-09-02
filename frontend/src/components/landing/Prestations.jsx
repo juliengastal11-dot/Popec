@@ -66,7 +66,7 @@ const services = [
     place: "Burning · Cross · Hyrox",
     text: "Des formats signature à haute énergie : brûlez, transpirez, dépassez-vous en musique et en groupe.",
     tags: ["salle"],
-    img: "/images/coach-sled-pull.jpeg",
+    img: "/images/coach-hyrox-wallball.jpeg",
     span: "md:col-span-4",
   },
 ];
