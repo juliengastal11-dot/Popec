@@ -32,7 +32,7 @@ export default function Hero() {
       id="hero"
       ref={ref}
       data-testid="hero-section"
-      className="relative min-h-screen flex flex-col justify-end overflow-hidden pt-28"
+      className="relative min-h-[100svh] flex flex-col justify-center lg:justify-end overflow-hidden pt-28"
     >
       <img
         src="/images/hero-paysage.png"
@@ -47,11 +47,11 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           style={{ y: textY }}
-          className="lg:col-span-7 pb-6"
+          className="lg:col-span-7 pb-6 text-center lg:text-left"
         >
           <h1
             data-testid="hero-headline"
-            className="font-display font-extrabold tracking-tight leading-[1.06] text-4xl sm:text-5xl lg:text-6xl text-sand"
+            className="font-display font-extrabold tracking-tight leading-[1.06] text-3xl sm:text-5xl lg:text-6xl text-sand"
           >
             <span className="block overflow-hidden pb-1">
               <motion.span variants={lineReveal} className="block">
@@ -79,11 +79,11 @@ export default function Hero() {
             toujours dans la bonne humeur.
           </motion.p>
 
-          <motion.div variants={fade} className="mt-9 flex flex-wrap items-center gap-4">
+          <motion.div variants={fade} className="mt-9 flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <button
               data-testid="hero-cta-primary"
               onClick={() => scrollToSection("prestations")}
-              className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-aqua text-forest font-semibold px-8 py-4 w-full sm:w-[270px] transition-all duration-300 hover:bg-[#7df1ff] active:scale-95"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-transparent bg-aqua text-forest font-semibold px-8 py-[14px] w-full sm:w-[270px] transition-all duration-300 hover:bg-[#7df1ff] active:scale-95"
             >
               Explorer les prestations
               <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -102,7 +102,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.94, y: 40 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="lg:col-span-5 relative"
+          className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none mt-10 lg:mt-0"
         >
           <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[6rem] aspect-[4/5] max-h-[62vh] w-full shadow-[0_40px_80px_-30px_rgba(15,76,99,0.45)]">
             <motion.img

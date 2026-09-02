@@ -71,7 +71,7 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button"
-            onClick={() => go("reservation")}
+            onClick={() => go("contact")}
             className="ml-2 rounded-full bg-aqua text-forest text-sm font-semibold px-6 py-2.5 transition-all duration-300 hover:bg-[#7df1ff] hover:scale-[1.03] active:scale-95"
           >
             Réserver un bilan
@@ -102,7 +102,7 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button-mobile"
-            onClick={() => go("reservation")}
+            onClick={() => go("contact")}
             className="rounded-full bg-aqua text-forest font-semibold px-6 py-3 mt-2"
           >
             Réserver un bilan
