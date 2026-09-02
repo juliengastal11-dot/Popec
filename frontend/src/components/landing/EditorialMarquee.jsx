@@ -6,7 +6,7 @@ const items = [
   "Fitness Park Béziers",
   "Remise en forme",
   "Cours collectifs Burning",
-  "Cross",
+  "Fonctionnel",
   "Hyrox",
   "Diplômé DEUST · Métiers de la Forme",
   "Course à pied",
@@ -16,15 +16,15 @@ export default function EditorialMarquee() {
   return (
     <section
       data-testid="editorial-marquee-section"
-      className="relative z-10 -rotate-1 bg-forest py-5 border-y border-forest shadow-[0_20px_50px_-20px_rgba(27,59,43,0.5)]"
+      className="relative z-10 -rotate-1 bg-aqua py-5 border-y border-forest/15 shadow-[0_20px_50px_-20px_rgba(15,76,99,0.35)]"
     >
       <Marquee speed={35} gradient={false} pauseOnHover>
         {items.map((item) => (
           <span key={item} className="flex items-center gap-10 pr-10">
-            <span className="font-display font-bold uppercase tracking-wide text-sand/90 text-lg sm:text-xl whitespace-nowrap">
+            <span className="font-display font-bold uppercase tracking-wide text-forest text-lg sm:text-xl whitespace-nowrap">
               {item}
             </span>
-            <Sparkle size={16} className="text-aqua shrink-0" />
+            <Sparkle size={16} className="text-forest shrink-0" />
           </span>
         ))}
       </Marquee>

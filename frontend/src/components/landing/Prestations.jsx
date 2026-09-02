@@ -13,7 +13,8 @@ const services = [
     place: "Fitness Park Béziers",
     text: "Séances encadrées en salle partenaire : renforcement, cardio, préparation physique. Matériel pro, progression garantie.",
     tags: ["salle"],
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200",
+    img: "/images/coach-groupe.jpeg",
+    pos: "center 48%",
     span: "md:col-span-4",
   },
   {
@@ -24,7 +25,7 @@ const services = [
     place: "Grands espaces",
     text: "Plans d'entraînement trail, gestion du dénivelé, nutrition, stratégie de course. De votre premier 10 km nature à l'ultra.",
     tags: ["outdoor"],
-    img: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1200",
+    img: "/images/spartan.png",
     span: "md:col-span-2",
   },
   {
@@ -126,7 +127,7 @@ export default function Prestations() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                className={`group relative ${s.span} rounded-3xl border border-forest/10 bg-sand overflow-hidden transition-shadow duration-500 hover:shadow-[0_30px_60px_-25px_rgba(12,59,76,0.35)]`}
+                className={`group relative ${s.span} rounded-3xl border border-forest/10 bg-sand overflow-hidden transition-shadow duration-500 hover:shadow-[0_30px_60px_-25px_rgba(15,76,99,0.35)]`}
               >
                 {s.img && (
                   <div className="relative h-44 overflow-hidden">
@@ -134,6 +135,7 @@ export default function Prestations() {
                       src={s.img}
                       alt={s.title}
                       loading="lazy"
+                      style={{ objectPosition: s.pos || "center" }}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-forest/20" />

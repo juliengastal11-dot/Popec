@@ -1,4 +1,4 @@
-import { Instagram, Mountain, Timer } from "lucide-react";
+import { Instagram, Timer } from "lucide-react";
 import { scrollToSection } from "@/pages/Landing";
 
 export default function Footer() {
@@ -7,18 +7,25 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           <div>
-            <button
-              data-testid="footer-logo"
-              onClick={() => window.__lenis?.scrollTo(0, { duration: 1.4 })}
-              className="flex items-center gap-2.5"
-            >
-              <span className="w-9 h-9 rounded-full bg-terracotta text-sand flex items-center justify-center">
-                <Mountain size={17} strokeWidth={2.2} />
-              </span>
-              <span className="font-display font-extrabold text-lg tracking-tight">
+            <div className="flex items-center gap-2.5">
+              <a
+                data-testid="footer-instagram-link"
+                href="https://www.instagram.com/popec_run/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Popec Run"
+                className="w-9 h-9 rounded-full bg-terracotta text-sand flex items-center justify-center transition-colors duration-300 hover:bg-aqua hover:text-ink"
+              >
+                <Instagram size={17} strokeWidth={2.2} />
+              </a>
+              <button
+                data-testid="footer-logo"
+                onClick={() => window.__lenis?.scrollTo(0, { duration: 1.4 })}
+                className="font-display font-extrabold text-lg tracking-tight"
+              >
                 POPEC<span className="text-terracotta">RUN</span>
-              </span>
-            </button>
+              </button>
+            </div>
             <p className="mt-5 text-sm text-sand/50 max-w-xs leading-relaxed">
               Coaching sportif indépendant — trail, course à pied, remise en forme et cours
               collectifs. Béziers & grands espaces.

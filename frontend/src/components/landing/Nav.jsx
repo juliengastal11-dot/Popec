@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Mountain, Menu, X } from "lucide-react";
+import { Instagram, Menu, X } from "lucide-react";
 import { scrollToSection } from "@/pages/Landing";
 
 const links = [
@@ -33,23 +33,30 @@ export default function Nav() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       className={`fixed top-0 left-0 right-0 z-[80] transition-[background-color,box-shadow,border-color] duration-500 border-b ${
         scrolled
-          ? "bg-sand/85 backdrop-blur-xl border-forest/10 shadow-[0_8px_30px_rgba(12,59,76,0.06)]"
+          ? "bg-sand/85 backdrop-blur-xl border-forest/10 shadow-[0_8px_30px_rgba(15,76,99,0.06)]"
           : "bg-transparent border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between">
-        <button
-          data-testid="nav-logo-link"
-          onClick={() => window.__lenis?.scrollTo(0, { duration: 1.4 })}
-          className="flex items-center gap-2.5 group"
-        >
-          <span className="w-9 h-9 rounded-full bg-forest text-sand flex items-center justify-center transition-colors duration-300 group-hover:bg-terracotta">
-            <Mountain size={17} strokeWidth={2.2} />
-          </span>
-          <span className="font-display font-extrabold text-lg tracking-tight text-forest">
+        <div className="flex items-center gap-2.5">
+          <a
+            data-testid="nav-instagram-link"
+            href="https://www.instagram.com/popec_run/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram Popec Run"
+            className="w-9 h-9 rounded-full bg-forest text-sand flex items-center justify-center transition-colors duration-300 hover:bg-terracotta"
+          >
+            <Instagram size={17} strokeWidth={2.2} />
+          </a>
+          <button
+            data-testid="nav-logo-link"
+            onClick={() => window.__lenis?.scrollTo(0, { duration: 1.4 })}
+            className="font-display font-extrabold text-lg tracking-tight text-forest"
+          >
             POPEC<span className="text-terracotta">RUN</span>
-          </span>
-        </button>
+          </button>
+        </div>
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
@@ -64,8 +71,8 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button"
-            onClick={() => go("contact")}
-            className="ml-2 rounded-full bg-forest text-sand text-sm font-semibold px-6 py-2.5 transition-all duration-300 hover:bg-terracotta hover:scale-[1.03] active:scale-95"
+            onClick={() => go("reservation")}
+            className="ml-2 rounded-full bg-aqua text-forest text-sm font-semibold px-6 py-2.5 transition-all duration-300 hover:bg-[#7df1ff] hover:scale-[1.03] active:scale-95"
           >
             Réserver un bilan
           </button>
@@ -95,8 +102,8 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button-mobile"
-            onClick={() => go("contact")}
-            className="rounded-full bg-forest text-sand font-semibold px-6 py-3 mt-2"
+            onClick={() => go("reservation")}
+            className="rounded-full bg-aqua text-forest font-semibold px-6 py-3 mt-2"
           >
             Réserver un bilan
           </button>

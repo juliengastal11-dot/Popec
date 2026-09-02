@@ -8,8 +8,8 @@ const chapters = [
     testId: "manifesto-chapter-01",
     title: "La nature comme terrain de jeu",
     text: "Sentiers, crêtes, forêts : l'extérieur est la plus belle des salles. Le trail et la course à pied apprennent à lire le terrain, gérer l'effort et respirer. Chaque sortie est une aventure, chaque dénivelé une leçon.",
-    img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=1200",
-    alt: "Sentier forestier baigné de lumière, terrain de jeu naturel",
+    img: "/images/trail-sunset.png",
+    alt: "Popec admirant un coucher de soleil depuis un sommet après une sortie trail",
     tag: "Outdoor",
   },
   {
@@ -17,8 +17,8 @@ const chapters = [
     testId: "manifesto-chapter-02",
     title: "L'exigence du mouvement, en salle",
     text: "Partenaire de Fitness Park à Béziers, je vous accompagne aussi entre quatre murs : burning, cross, hyrox. Des séances intenses, cadrées et progressives, pour construire un corps fort et durable.",
-    img: "/images/coach-hyrox-wallball.jpeg",
-    alt: "Popec en compétition HYROX, lancer de wall ball en salle",
+    img: "/images/salle-skierg.png",
+    alt: "Séance de ski-erg en salle encadrée par le coach Popec",
     tag: "Indoor",
   },
   {
@@ -64,7 +64,7 @@ function Chapter({ chapter, index }) {
       </Reveal>
       <Reveal delay={0.15} className={`lg:col-span-6 ${reversed ? "lg:order-1" : ""}`}>
         <div
-          className={`relative overflow-hidden aspect-[16/11] shadow-[0_30px_60px_-25px_rgba(12,59,76,0.4)] ${
+          className={`relative overflow-hidden aspect-[16/11] shadow-[0_30px_60px_-25px_rgba(15,76,99,0.4)] ${
             reversed ? "rounded-[2rem] rounded-tl-[5rem]" : "rounded-[2rem] rounded-br-[5rem]"
           }`}
         >

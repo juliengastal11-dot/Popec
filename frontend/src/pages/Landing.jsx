@@ -6,6 +6,7 @@ import EditorialMarquee from "@/components/landing/EditorialMarquee";
 import Manifesto from "@/components/landing/Manifesto";
 import Prestations from "@/components/landing/Prestations";
 import About from "@/components/landing/About";
+import Reservation from "@/components/landing/Reservation";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
 
@@ -45,6 +46,7 @@ export default function Landing() {
       <Manifesto />
       <Prestations />
       <About />
+      <Reservation />
       <Contact />
       <Footer />
     </main>

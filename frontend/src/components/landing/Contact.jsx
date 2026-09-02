@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative py-28 lg:py-36 bg-forest text-sand overflow-hidden">
+    <section id="contact" data-testid="contact-section" className="relative py-28 lg:py-36 bg-wave text-sand overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1600"
         alt=""

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, ArrowRight, Award } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import { scrollToSection } from "@/pages/Landing";
 
 const HERO_IMG = "/images/coach-sled-push.jpeg";
@@ -34,6 +34,13 @@ export default function Hero() {
       data-testid="hero-section"
       className="relative min-h-screen flex flex-col justify-end overflow-hidden pt-28"
     >
+      <img
+        src="/images/hero-paysage.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-forest/60" aria-hidden="true" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full relative z-10 grid lg:grid-cols-12 gap-10 items-end pb-10">
         <motion.div
           variants={container}
@@ -42,50 +49,41 @@ export default function Hero() {
           style={{ y: textY }}
           className="lg:col-span-7 pb-6"
         >
-          <motion.div variants={fade} className="mb-8">
-            <span
-              data-testid="hero-bpjeps-badge"
-              className="inline-flex items-center gap-2 rounded-full border border-forest/20 bg-sanddeep px-4 py-1.5 text-xs font-mono uppercase tracking-[0.25em] text-forest"
-            >
-              <Award size={14} className="text-terracotta" />
-              Coach diplômé DEUST · Métiers de la Forme — Béziers
-            </span>
-          </motion.div>
-
           <h1
             data-testid="hero-headline"
-            className="font-display font-extrabold tracking-tight leading-[1.04] text-4xl sm:text-5xl lg:text-[4.4rem] text-forest"
+            className="font-display font-extrabold tracking-tight leading-[1.06] text-4xl sm:text-5xl lg:text-6xl text-sand"
           >
             <span className="block overflow-hidden pb-1">
               <motion.span variants={lineReveal} className="block">
-                Repoussez vos
+                S'entraîner sérieusement,
               </motion.span>
             </span>
             <span className="block overflow-hidden pb-1">
               <motion.span variants={lineReveal} className="block">
-                limites. <span className="text-terracotta">Domptez</span>
+                sans se prendre
               </motion.span>
             </span>
             <span className="block overflow-hidden pb-2">
               <motion.span variants={lineReveal} className="block">
-                le terrain.
+                au <span className="text-terracotta">sérieux.</span>
               </motion.span>
             </span>
           </h1>
 
           <motion.p
             variants={fade}
-            className="mt-6 max-w-xl text-base sm:text-lg text-clay leading-relaxed"
+            className="mt-6 max-w-xl text-base sm:text-lg text-sand/85 leading-relaxed"
           >
-            Coaching running, trail et remise en forme, en pleine nature ou en salle
-            de sport. Un accompagnement sur-mesure, exigeant et dans la bonne humeur.
+            Coaching running, trail, entraînement fonctionnel, Hyrox. En pleine nature
+            ou en salle de sport. Un accompagnement sur-mesure et exigeant, mais
+            toujours dans la bonne humeur.
           </motion.p>
 
           <motion.div variants={fade} className="mt-9 flex flex-wrap items-center gap-4">
             <button
               data-testid="hero-cta-primary"
               onClick={() => scrollToSection("prestations")}
-              className="group inline-flex items-center gap-2.5 rounded-full bg-forest text-sand font-semibold px-8 py-4 transition-all duration-300 hover:bg-terracotta hover:gap-4 active:scale-95"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-aqua text-forest font-semibold px-8 py-4 w-full sm:w-[270px] transition-all duration-300 hover:bg-[#7df1ff] active:scale-95"
             >
               Explorer les prestations
               <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -93,7 +91,7 @@ export default function Hero() {
             <button
               data-testid="hero-cta-secondary"
               onClick={() => scrollToSection("contact")}
-              className="inline-flex items-center gap-2.5 rounded-full border-2 border-forest/25 text-forest font-semibold px-8 py-[14px] transition-all duration-300 hover:border-forest hover:bg-forest hover:text-sand active:scale-95"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-sand/50 text-sand font-semibold px-8 py-[14px] w-full sm:w-[270px] transition-all duration-300 hover:border-sand hover:bg-sand hover:text-forest active:scale-95"
             >
               Prendre contact
             </button>
@@ -106,7 +104,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[6rem] aspect-[4/5] max-h-[62vh] w-full shadow-[0_40px_80px_-30px_rgba(12,59,76,0.45)]">
+          <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[6rem] aspect-[4/5] max-h-[62vh] w-full shadow-[0_40px_80px_-30px_rgba(15,76,99,0.45)]">
             <motion.img
               data-testid="hero-trail-image"
               src={HERO_IMG}
@@ -133,7 +131,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 0.8 }}
-        className="absolute bottom-8 left-6 lg:left-10 z-10 hidden sm:flex items-center gap-3 text-forest/60 text-xs font-mono uppercase tracking-[0.25em] transition-colors duration-300 hover:text-forest"
+        className="absolute bottom-8 left-6 lg:left-10 z-10 hidden sm:flex items-center gap-3 text-sand/70 text-xs font-mono uppercase tracking-[0.25em] transition-colors duration-300 hover:text-sand"
       >
         <motion.span
           animate={{ y: [0, 6, 0] }}

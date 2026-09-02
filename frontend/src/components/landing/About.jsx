@@ -61,16 +61,18 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-base sm:text-lg text-clay leading-relaxed max-w-2xl">
-                Coureur passionné et coach diplômé DEUST Métiers de la Forme, Popec se lance en indépendant avec une
-                conviction simple : la performance naît du plaisir et de la régularité, pas de la
-                souffrance. De la salle aux sentiers, il construit des accompagnements exigeants,
-                bienveillants et taillés pour votre vie réelle.
+                Moi, c'est Popec : coach diplômé DEUST Métiers de la Forme, coureur de trail et
+                compétiteur HYROX et Spartan Race. Je me lance en indépendant avec une conviction
+                simple : on progresse mieux quand on s'entraîne dans la bonne humeur. J'aime autant
+                les lignes de crête au lever du soleil que les séances qui décoiffent en salle. Pas de
+                séance militaire chez moi : de l'exigence, du suivi, et toujours le sourire. Vous venez
+                pour le résultat, vous reviendrez pour l'ambiance.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <div
                 data-testid="fitness-park-partner-badge"
-                className="mt-7 inline-flex items-center gap-3 rounded-2xl border border-forest/15 bg-sanddeep px-5 py-4"
+                className="mt-7 flex w-full items-center justify-center gap-3 rounded-2xl border border-forest/15 bg-sanddeep px-5 py-4 text-center"
               >
                 <Handshake size={20} className="text-terracotta shrink-0" />
                 <p className="text-sm font-semibold text-forest">
