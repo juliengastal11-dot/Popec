@@ -77,17 +77,8 @@ export default function Prestations() {
                     <div className="absolute inset-0 bg-forest/20" />
                   </div>
                 )}
-                <div className="p-7">
-                  <div className="flex items-start justify-between">
-                    <span className="w-11 h-11 rounded-2xl bg-forest/8 border border-forest/10 text-forest flex items-center justify-center transition-colors duration-300 group-hover:bg-terracotta group-hover:text-sand group-hover:border-terracotta">
-                      <s.icon size={20} strokeWidth={2} />
-                    </span>
-                    <ArrowUpRight
-                      size={18}
-                      className="text-forest/30 transition-all duration-300 group-hover:text-terracotta group-hover:translate-x-1 group-hover:-translate-y-1"
-                    />
-                  </div>
-                  <h3 className="font-display font-bold text-xl sm:text-2xl text-forest mt-5">
+                <div className="px-7 pb-7 pt-5">
+                  <h3 className="font-display font-bold text-xl sm:text-2xl text-forest">
                     {s.title}
                   </h3>
                   <p className="text-xs font-mono uppercase tracking-[0.18em] text-terracotta mt-1.5">

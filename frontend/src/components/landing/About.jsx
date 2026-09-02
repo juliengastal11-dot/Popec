@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Award, Handshake, MapPin } from "lucide-react";
+import { Award, Handshake } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
 const stats = [
@@ -76,8 +76,8 @@ export default function About() {
                 <Handshake size={20} className="text-terracotta shrink-0" />
                 <p className="text-sm font-semibold text-forest">
                   Coach partenaire <span className="text-terracotta">Fitness Park Béziers</span>
-                  <span className="flex items-center gap-1.5 text-xs text-clay font-normal mt-0.5">
-                    <MapPin size={12} /> Séances en salle & en extérieur, Béziers et alentours
+                  <span className="flex items-center justify-center gap-1.5 text-xs text-clay font-normal mt-0.5">
+                    Séances en salle & en extérieur, Béziers et alentours
                   </span>
                 </p>
               </div>
