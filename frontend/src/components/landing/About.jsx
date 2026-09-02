@@ -53,7 +53,7 @@ export default function About() {
           <div className="lg:col-span-7">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta font-mono">
-                À propos
+                Oh fait ! Je ne me suis même pas présenté
               </span>
               <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-forest mt-4 leading-[1.1]">
                 Popec, un coach de terrain avant tout.
@@ -61,12 +61,11 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-base sm:text-lg text-clay leading-relaxed max-w-2xl">
-                Moi, c'est Popec : coach diplômé DEUST Métiers de la Forme, coureur de trail et
-                compétiteur HYROX et Spartan Race. Je me lance en indépendant avec une conviction
-                simple : on progresse mieux quand on s'entraîne dans la bonne humeur. J'aime autant
-                les lignes de crête au lever du soleil que les séances qui décoiffent en salle. Pas de
-                séance militaire chez moi : de l'exigence, du suivi, et toujours le sourire. Vous venez
-                pour le résultat, vous reviendrez pour l'ambiance.
+                Moi, c'est Popec : coach diplômé DEUST Métiers de la Forme. Compétiteur de Trail
+                Running et Hyrox, j'accompagne également des personnes pour de la transformation
+                physique, ainsi que pour de la performance et remise en forme grâce à une méthode
+                d'entraînement hybride (Endurance, Force ..) On s'entraîne sérieusement sans se
+                prendre au sérieux !
               </p>
             </Reveal>
             <Reveal delay={0.15}>

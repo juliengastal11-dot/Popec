@@ -88,7 +88,7 @@ export default function Manifesto() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <Reveal>
           <span className="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta font-mono">
-            Le manifeste
+            Ma vision
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-forest mt-4 max-w-2xl leading-[1.1]">
             Trois convictions, une seule ligne de crête.
