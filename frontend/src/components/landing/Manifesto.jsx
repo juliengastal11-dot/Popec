@@ -8,8 +8,8 @@ const chapters = [
     testId: "manifesto-chapter-01",
     title: "La nature comme terrain de jeu",
     text: "Sentiers, crêtes, forêts : l'extérieur est la plus belle des salles. Le trail et la course à pied apprennent à lire le terrain, gérer l'effort et respirer. Chaque sortie est une aventure, chaque dénivelé une leçon.",
-    img: "/images/trail-sunset.png",
-    alt: "Popec admirant un coucher de soleil depuis un sommet après une sortie trail",
+    img: "/images/nature-trail.jpeg",
+    alt: "Pause en haut d'un sommet, vue sur la vallée après une sortie trail",
     tag: "Outdoor",
   },
   {
