@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { CalendarCheck, Instagram, Loader2, LogOut, Mail, Phone, Trash2, Inbox } from "lucide-react";
+import { CalendarCheck, Loader2, LogOut, Mail, Phone, Trash2, Inbox } from "lucide-react";
+import { InstagramIcon } from "@/components/SocialIcons";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 const TOKEN_KEY = "popec_admin_token";
@@ -118,7 +119,7 @@ export default function Admin() {
               aria-label="Instagram Popec Run"
               className="w-10 h-10 rounded-full bg-forest text-sand flex items-center justify-center transition-colors duration-300 hover:bg-terracotta"
             >
-              <Instagram size={18} />
+              <InstagramIcon size={17} />
             </a>
             <div>
               <p className="font-display font-extrabold text-forest leading-tight">POPEC RUN</p>
@@ -173,7 +174,7 @@ export default function Admin() {
               aria-label="Instagram Popec Run"
               className="w-9 h-9 rounded-full bg-forest text-sand flex items-center justify-center transition-colors duration-300 hover:bg-terracotta"
             >
-              <Instagram size={16} />
+              <InstagramIcon size={15} />
             </a>
             <p className="font-display font-extrabold text-forest">Espace coach</p>
           </div>

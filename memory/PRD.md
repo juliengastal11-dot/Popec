@@ -29,6 +29,8 @@
 - Prestations 3 blocs (2026-09-02, 4e vague) : suppression des filtres et des blocs remise en forme / course à pied / coaching indiv-groupe (fusionnés) — Bloc 1 Coaching en salle (photo HYROX rouge, indiv+groupe), Bloc 2 Conseils & prépa trail + course à pied & endurance (photo Spartan rouge), Bloc 3 Cours collectifs (photo groupe, cadrage "center 72%" pour masquer le texte "Le coach :"). Manifesto overline → "MA VISION". About : overline "Oh fait ! Je ne me suis même pas présenté", bio méthode hybride (Endurance, Force)
 - Manifesto ch1 (2026-09-02) : photo coucher de soleil remplacée par la photo POV montagne/chaussures orange fournie par le coach (/images/nature-trail.jpeg)
 - Retouches (2026-09-02, 6e vague) : icône pin retirée du badge partenaire Fitness Park ; bande icône+flèche supprimée des 3 cartes prestations (texte directement sous la photo)
+- Effets de superposition (2026-09-02) : mot « COACH » centré passant au-dessus de la photo et sous le badge DEUST ; « GO ! » du contact déborde sur le footer
+- Icônes (2026-09-02) : vrais glyphes SVG Instagram + Strava (components/SocialIcons.jsx) utilisés dans nav, footer et admin ; lien Instagram du footer pointe vers instagram.com/popec_run ; survols aux couleurs de marque
 - Retouches (2026-09-02, 5e vague) : section Réservation en ligne SUPPRIMÉE du site (composant retiré, endpoints /api/booking(s) conservés côté backend, onglet Réservations encore visible dans /admin), CTA nav « Réserver un bilan » pointe vers #contact, hero mobile centré (texte centré, titre réduit, photo encadrée centrée max-w-md), boutons hero à hauteur égale, lien « Espace coach » ajouté dans le footer → /admin
 
 ## Backlog

@@ -1,5 +1,5 @@
-import { Instagram, Timer } from "lucide-react";
 import { scrollToSection } from "@/pages/Landing";
+import { InstagramIcon, StravaIcon } from "@/components/SocialIcons";
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
                 aria-label="Instagram Popec Run"
                 className="w-9 h-9 rounded-full bg-terracotta text-sand flex items-center justify-center transition-colors duration-300 hover:bg-aqua hover:text-ink"
               >
-                <Instagram size={17} strokeWidth={2.2} />
+                <InstagramIcon size={16} />
               </a>
               <button
                 data-testid="footer-logo"
@@ -33,13 +33,13 @@ export default function Footer() {
             <div className="mt-6 flex gap-3">
               <a
                 data-testid="footer-social-instagram"
-                href="https://instagram.com"
+                href="https://www.instagram.com/popec_run/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full border border-sand/20 flex items-center justify-center text-sand/70 transition-all duration-300 hover:bg-terracotta hover:border-terracotta hover:text-sand"
+                className="w-10 h-10 rounded-full border border-sand/20 flex items-center justify-center text-sand/70 transition-all duration-300 hover:bg-[#E1306C] hover:border-[#E1306C] hover:text-white"
               >
-                <Instagram size={16} />
+                <InstagramIcon size={16} />
               </a>
               <a
                 data-testid="footer-social-strava"
@@ -47,9 +47,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Strava"
-                className="w-10 h-10 rounded-full border border-sand/20 flex items-center justify-center text-sand/70 transition-all duration-300 hover:bg-terracotta hover:border-terracotta hover:text-sand"
+                className="w-10 h-10 rounded-full border border-sand/20 flex items-center justify-center text-sand/70 transition-all duration-300 hover:bg-[#FC4C02] hover:border-[#FC4C02] hover:text-white"
               >
-                <Timer size={16} />
+                <StravaIcon size={15} />
               </a>
             </div>
           </div>

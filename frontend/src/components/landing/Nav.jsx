@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Instagram, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { InstagramIcon } from "@/components/SocialIcons";
 import { scrollToSection } from "@/pages/Landing";
 
 const links = [
@@ -47,7 +48,7 @@ export default function Nav() {
             aria-label="Instagram Popec Run"
             className="w-9 h-9 rounded-full bg-forest text-sand flex items-center justify-center transition-colors duration-300 hover:bg-terracotta"
           >
-            <Instagram size={17} strokeWidth={2.2} />
+            <InstagramIcon size={16} />
           </a>
           <button
             data-testid="nav-logo-link"

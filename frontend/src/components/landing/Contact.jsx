@@ -52,7 +52,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" data-testid="contact-section" className="relative py-28 lg:py-36 bg-wave text-sand overflow-hidden">
+    <section id="contact" data-testid="contact-section" className="relative py-28 lg:py-36 bg-wave text-sand">
       <img
         src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1600"
         alt=""
@@ -62,7 +62,7 @@ export default function Contact() {
       />
       <span
         aria-hidden="true"
-        className="absolute -bottom-6 left-0 font-display font-extrabold text-[16vw] leading-none text-outline-sand select-none pointer-events-none"
+        className="absolute -bottom-16 left-0 z-30 font-display font-extrabold text-[16vw] leading-none text-outline-sand select-none pointer-events-none"
       >
         GO !
       </span>

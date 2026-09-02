@@ -19,7 +19,7 @@ export default function About() {
     <section id="apropos" ref={ref} data-testid="about-coach-section" className="relative py-28 lg:py-40 overflow-hidden">
       <span
         aria-hidden="true"
-        className="absolute top-10 right-0 font-display font-extrabold text-[18vw] leading-none text-outline select-none pointer-events-none"
+        className="absolute top-10 left-1/2 -translate-x-1/2 z-[5] whitespace-nowrap font-display font-extrabold text-[18vw] leading-none text-outline select-none pointer-events-none"
       >
         COACH
       </span>
@@ -27,7 +27,7 @@ export default function About() {
         <div className="grid lg:grid-cols-12 gap-14 items-center">
           <Reveal className="lg:col-span-5">
             <div className="relative">
-              <div className="overflow-hidden rounded-[2rem] rounded-bl-[6rem] aspect-[4/5] shadow-[0_40px_80px_-30px_rgba(27,59,43,0.45)]">
+              <div className="relative z-0 overflow-hidden rounded-[2rem] rounded-bl-[6rem] aspect-[4/5] shadow-[0_40px_80px_-30px_rgba(15,76,99,0.45)]">
                 <motion.img
                   data-testid="coach-portrait-image"
                   src="/images/coach-portrait.jpeg"
@@ -39,7 +39,7 @@ export default function About() {
               </div>
               <div
                 data-testid="bpjeps-certification-badge"
-                className="absolute -top-5 -right-4 bg-forest text-sand rounded-2xl px-5 py-4 shadow-xl flex items-center gap-3 rotate-2"
+                className="absolute -top-5 -right-4 z-20 bg-forest text-sand rounded-2xl px-5 py-4 shadow-xl flex items-center gap-3 rotate-2"
               >
                 <Award size={22} className="text-ochre shrink-0" />
                 <div>
