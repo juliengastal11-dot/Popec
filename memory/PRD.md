@@ -20,6 +20,7 @@
 - API : POST /api/contact, POST /api/auth/login, GET /api/leads (auth), DELETE /api/leads/{id} (auth)
 - Page admin /admin : login JWT, liste des demandes, suppression
 - Identifiants admin : admin@popecrun.fr / PopecRun2026! (voir /app/memory/test_credentials.md)
+- Photos réelles du coach intégrées (2026-09-02) : /app/frontend/public/images/ — hero (sled push), À propos (portrait souriant), manifeste ch.02 (wall ball HYROX), carte cours collectifs (traction sled)
 
 ## Backlog
 - P1 : notification email au coach à chaque demande (Resend, intégration gérée Emergent)

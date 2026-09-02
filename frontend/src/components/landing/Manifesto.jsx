@@ -17,8 +17,8 @@ const chapters = [
     testId: "manifesto-chapter-02",
     title: "L'exigence du mouvement, en salle",
     text: "Partenaire de Fitness Park à Béziers, je vous accompagne aussi entre quatre murs : burning, cross training, hydroxyde. Des séances intenses, cadrées et progressives, pour construire un corps fort et durable.",
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200",
-    alt: "Salle de sport moderne équipée chez Fitness Park",
+    img: "/images/coach-hyrox-wallball.jpeg",
+    alt: "Popec en compétition HYROX, lancer de wall ball en salle",
     tag: "Indoor",
   },
   {

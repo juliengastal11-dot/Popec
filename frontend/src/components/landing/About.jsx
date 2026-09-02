@@ -30,8 +30,8 @@ export default function About() {
               <div className="overflow-hidden rounded-[2rem] rounded-bl-[6rem] aspect-[4/5] shadow-[0_40px_80px_-30px_rgba(27,59,43,0.45)]">
                 <motion.img
                   data-testid="coach-portrait-image"
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1200"
-                  alt="Portrait du coach sportif Popec sur le terrain outdoor"
+                  src="/images/coach-portrait.jpeg"
+                  alt="Portrait souriant de Popec, coach sportif diplômé BPJEPS, en extérieur"
                   style={{ y: imgY }}
                   className="w-full h-[115%] object-cover -mt-[7%]"
                   loading="lazy"

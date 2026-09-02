@@ -3,8 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, ArrowRight, Award } from "lucide-react";
 import { scrollToSection } from "@/pages/Landing";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=1600";
+const HERO_IMG = "/images/coach-sled-push.jpeg";
 
 const container = {
   hidden: {},
@@ -111,7 +110,7 @@ export default function Hero() {
             <motion.img
               data-testid="hero-trail-image"
               src={HERO_IMG}
-              alt="Trail runner franchissant une crête en montagne au lever du soleil"
+              alt="Popec, coach sportif, en pleine poussée de sled lors d'une compétition outdoor"
               style={{ y: imgY, scale: imgScale }}
               className="absolute inset-0 w-full h-full object-cover"
             />

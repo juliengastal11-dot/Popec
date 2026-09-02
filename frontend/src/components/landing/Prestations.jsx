@@ -65,7 +65,7 @@ const services = [
     place: "Burning · Cross Training · Hydroxyde",
     text: "Des formats signature à haute énergie : brûlez, transpirez, dépassez-vous en musique et en groupe.",
     tags: ["salle"],
-    img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=1200",
+    img: "/images/coach-sled-pull.jpeg",
     span: "md:col-span-4",
   },
 ];
