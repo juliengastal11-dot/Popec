@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 40 30% 94%;
+        --foreground: 150 8% 13%;
+        --card: 40 24% 92%;
+        --card-foreground: 150 8% 13%;
+        --popover: 40 30% 96%;
+        --popover-foreground: 150 8% 13%;
+        --primary: 150 37% 17%;
+        --primary-foreground: 40 30% 94%;
+        --secondary: 40 24% 92%;
+        --secondary-foreground: 150 37% 17%;
+        --muted: 40 16% 88%;
+        --muted-foreground: 140 4% 38%;
+        --accent: 22 52% 52%;
+        --accent-foreground: 40 30% 96%;
+        --destructive: 0 72% 45%;
+        --destructive-foreground: 40 30% 96%;
+        --border: 150 20% 82%;
+        --input: 150 20% 82%;
+        --ring: 150 37% 17%;
+        --chart-1: 150 37% 17%;
+        --chart-2: 22 52% 52%;
+        --chart-3: 120 8% 53%;
+        --chart-4: 40 74% 50%;
+        --chart-5: 150 20% 40%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+    body {
+        @apply bg-sand text-ink font-body antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    ::selection {
+        background: #C86D44;
+        color: #F4F1EA;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #EFECE4;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #1B3B2B;
+        border-radius: 8px;
+        border: 2px solid #EFECE4;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+@layer utilities {
+    .grain-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 90;
+        pointer-events: none;
+        opacity: 0.55;
+        mix-blend-mode: multiply;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+    }
+    .text-outline {
+        -webkit-text-stroke: 1.5px rgba(27, 59, 43, 0.28);
+        color: transparent;
+    }
+    .text-outline-sand {
+        -webkit-text-stroke: 1.5px rgba(244, 241, 234, 0.35);
+        color: transparent;
+    }
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}

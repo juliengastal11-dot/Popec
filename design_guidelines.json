@@ -1,0 +1,235 @@
+{
+  "project_title": "Popec Run - Coaching Sportif & Trail Outdoor",
+  "app_type": "landing_page",
+  "language": "fr",
+  "brand_identity": {
+    "coach_name": "Popec run",
+    "diploma": "Coach diplômé BPJEPS",
+    "partner_gym": "Fitness Park à Béziers",
+    "tagline": "Dépassez vos limites entre salle & grands espaces",
+    "archetype": "ORGANIC & EARTHY (Trail & Outdoor Performance)",
+    "tone_of_voice": "Inspirant, exigeant, authentique, bienveillant, ancré dans l'esprit trail"
+  },
+  "typography": {
+    "heading_font": "Syne, sans-serif (Display expressif et géométrique)",
+    "body_font": "Plus Jakarta Sans, sans-serif (Humain, ultra-lisible)",
+    "mono_accent_font": "JetBrains Mono, monospace (Pour chapitres et données techniques)",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-bold",
+      "subtitle": "text-lg sm:text-xl font-normal text-stone-600 dark:text-stone-300 leading-relaxed",
+      "body": "text-base text-stone-700 dark:text-stone-300 leading-relaxed",
+      "overline_label": "text-xs uppercase tracking-[0.25em] font-semibold text-emerald-800 dark:text-emerald-400 font-mono"
+    }
+  },
+  "colors": {
+    "theme": "Light-first with warm earthy stone tones and rich forest emerald accents",
+    "palette": {
+      "background": "#F4F1EA",
+      "surface_card": "#EFECE4",
+      "surface_elevated": "#FFFFFF",
+      "primary_forest": "#1B3B2B",
+      "primary_hover": "#142D21",
+      "accent_sage": "#7D9080",
+      "accent_terracotta": "#C86D44",
+      "accent_ochre": "#D99B26",
+      "text_main": "#1E2421",
+      "text_muted": "#5C645F",
+      "border_subtle": "rgba(27, 59, 43, 0.12)",
+      "glass_bg": "rgba(244, 241, 234, 0.82)"
+    },
+    "dark_mode_palette": {
+      "background": "#0F1412",
+      "surface_card": "#171F1B",
+      "surface_elevated": "#1E2823",
+      "primary_forest": "#3E6B52",
+      "primary_hover": "#4C8063",
+      "accent_sage": "#9CB0A0",
+      "accent_terracotta": "#DE7C52",
+      "text_main": "#F0F4F1",
+      "text_muted": "#9CA8A0",
+      "border_subtle": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphic_header": "backdrop-blur-md bg-[#F4F1EA]/80 dark:bg-[#0F1412]/80 border-b border-[#1B3B2B]/10 z-50 sticky top-0",
+    "grain_overlay": "Background subtle CSS SVG noise pattern to give raw tactile earth vibe",
+    "bento_grid_style": "Asymmetric Bento Tetris grid with 1px earthy borders, staggered rounded-2xl cards and deep hover elevation",
+    "kinetic_hero": "Framer Motion line-by-line reveal animation on main headline with staggered word masks",
+    "chapter_manifesto": "Numbered editorial layout (01 / 02 / 03) with vertical progress line and rich imagery parallax",
+    "editorial_marquee": "Slow-drifting infinite marquee using react-fast-marquee with warm sage background, dark green typography and generous gaps"
+  },
+  "required_sections": [
+    {
+      "id": "nav",
+      "name": "Navigation Bar Header",
+      "description": "Sticky navigation with logo Popec Run, links to Prestations, Manifeste, À Propos BPJEPS, Partner Fitness Park, and direct CTA 'Réserver un bilan'.",
+      "test_ids": {
+        "nav_container": "nav-header",
+        "logo_link": "nav-logo-link",
+        "link_manifesto": "nav-link-manifesto",
+        "link_prestations": "nav-link-prestations",
+        "link_about": "nav-link-about",
+        "link_contact": "nav-link-contact",
+        "cta_button": "nav-cta-contact-button"
+      }
+    },
+    {
+      "id": "hero",
+      "name": "Kinetic Hero Reveal",
+      "description": "Line-by-line animated hero banner featuring outdoor trail imagery, coach badge BPJEPS, kinetic headline 'Repoussez vos limites. Domptez le terrain.', subheadline, and double CTA buttons ('Explorer les Prestations' & 'Prendre Contact').",
+      "test_ids": {
+        "hero_section": "hero-section",
+        "hero_headline": "hero-headline",
+        "hero_bpjeps_badge": "hero-bpjeps-badge",
+        "hero_cta_primary": "hero-cta-primary",
+        "hero_cta_secondary": "hero-cta-secondary",
+        "hero_image": "hero-trail-image"
+      }
+    },
+    {
+      "id": "marquee",
+      "name": "Editorial Living Texture Marquee",
+      "description": "Slow organic ribbon showcasing key values: 'TRAIL RUNNING • COACHING FITNESS PARK BÉZIERS • REMISE EN FORME • COURS COLLECTIFS BURNING • CROSS TRAINING • HYDROXYDE • DIPLÔMÉ BPJEPS'",
+      "test_ids": {
+        "marquee_container": "editorial-marquee-section"
+      }
+    },
+    {
+      "id": "manifesto",
+      "name": "Manifeste en Chapitres Numérotés",
+      "description": "3 numbered editorial chapters presenting Popec Run's philosophy: Chapitre 01: La Nature comme Terrain de Jeu, Chapitre 02: L'Exigence du Mouvement & Salle Fitness Park Béziers, Chapitre 03: L'Accompagnement Suivi & Mesurable.",
+      "test_ids": {
+        "manifesto_section": "manifesto-section",
+        "chapter_1": "manifesto-chapter-01",
+        "chapter_2": "manifesto-chapter-02",
+        "chapter_3": "manifesto-chapter-03"
+      }
+    },
+    {
+      "id": "prestations",
+      "name": "Section Prestations & Services",
+      "description": "Asymmetrical Bento Grid highlighting all 6 core services (NO PRICING SECTION): 1. Coaching en Salle (Fitness Park Béziers), 2. Conseil & Préparation Trail, 3. Course à pied & Endurance, 4. Remise en Forme & Vitalité, 5. Coaching Individuel et/ou en Groupe, 6. Cours Collectifs (Burning, Cross Training, Hydroxyde). Interactive filter tags and modal/drawer detail trigger.",
+      "test_ids": {
+        "prestations_section": "prestations-section",
+        "card_fitness_park": "prestation-card-fitness-park-beziers",
+        "card_trail": "prestation-card-conseil-trail",
+        "card_running": "prestation-card-course-a-pied",
+        "card_remise_en_forme": "prestation-card-remise-en-forme",
+        "card_coaching_indiv_groupe": "prestation-card-coaching-indiv-groupe",
+        "card_cours_collectifs": "prestation-card-cours-collectifs-burning-cross-hydroxyde",
+        "filter_all": "prestations-filter-all",
+        "filter_outdoor": "prestations-filter-outdoor",
+        "filter_indoor": "prestations-filter-indoor"
+      }
+    },
+    {
+      "id": "about_bpjeps",
+      "name": "À Propos du Coach Popec & Certification BPJEPS",
+      "description": "Detailed coach biography, credentials showcase (BPJEPS diploma, experience in trail running and fitness coaching), partner mention (Fitness Park Béziers), and core values key statistics (e.g. 100% sur-mesure, X coureurs accompagnés).",
+      "test_ids": {
+        "about_section": "about-coach-section",
+        "coach_portrait": "coach-portrait-image",
+        "bpjeps_certificate_badge": "bpjeps-certification-badge",
+        "fitness_park_partner_badge": "fitness-park-partner-badge"
+      }
+    },
+    {
+      "id": "contact_form",
+      "name": "Formulaire de Prise de Contact Moderne",
+      "description": "Interactive lead generation form with fields: Nom complet, Email, Téléphone, Objectif principal (Select/Radio: Trail, Remise en forme, Preparation physique Fitness Park, Cours collectifs), Message, and submit button with Sonner toast confirmation.",
+      "test_ids": {
+        "contact_section": "contact-section",
+        "contact_form": "contact-form",
+        "input_name": "contact-input-name",
+        "input_email": "contact-input-email",
+        "input_phone": "contact-input-phone",
+        "select_objective": "contact-select-objective",
+        "textarea_message": "contact-textarea-message",
+        "submit_button": "contact-submit-button"
+      }
+    },
+    {
+      "id": "footer",
+      "name": "Footer Editorial",
+      "description": "Cinematic large-type footer with Popec Run emblem, quick links, contact info (Béziers & terrains extérieurs), copyright, and social links.",
+      "test_ids": {
+        "footer_section": "footer-section",
+        "footer_logo": "footer-logo",
+        "footer_social_instagram": "footer-social-instagram",
+        "footer_social_strava": "footer-social-strava"
+      }
+    }
+  ],
+  "image_urls": {
+    "hero_trail_runner": {
+      "url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Trail runner franchissant une crête en montagne au lever du soleil",
+      "category": "hero",
+      "usage": "Arrière-plan principal ou visuel héro cinétique"
+    },
+    "trail_nature_action": {
+      "url": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Course à pied en forêt sur sentier naturel",
+      "category": "manifesto",
+      "usage": "Visuel Chapitre 01 Nature & Trail"
+    },
+    "fitness_park_indoor": {
+      "url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Salle de sport moderne equipée chez Fitness Park",
+      "category": "prestations",
+      "usage": "Carte Prestation Coaching en Salle chez Fitness Park Béziers"
+    },
+    "cross_training_burning": {
+      "url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Séance de Cross Training et cours collectif haute intensité",
+      "category": "prestations",
+      "usage": "Carte Cours Collectifs Burning, Cross Training & Hydroxyde"
+    },
+    "coach_portrait": {
+      "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Portrait du coach sportif Popec sur le terrain outdoor",
+      "category": "about",
+      "usage": "Section Diplôme BPJEPS & À propos du coach"
+    },
+    "trail_summit": {
+      "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Paysage naturel de montagne et sentier de trail outdoor",
+      "category": "background",
+      "usage": "Bannière contact ou fond de manifeste"
+    }
+  },
+  "motion_and_animations": {
+    "smooth_scroll": "Lenis smooth scroll (import Lenis from '@studio-freight/lenis' or lenis)",
+    "hero_reveal": "Framer motion line reveal: opacity 0 to 1, y 20 to 0 with duration 0.8s, ease easeOut and staggerChildren 0.15s",
+    "bento_cards": "Hover scale 1.02 with subtle shadow transition and border highlight",
+    "marquee_speed": "react-fast-marquee speed 35, gradient={false}"
+  },
+  "instructions_to_main_agent": [
+    "Créer une landing page complète en français pour 'Popec run', coach sportif indépendant diplômé BPJEPS.",
+    "Respecter strictement l'esprit Trail/Outdoor avec une palette verte et terreuse (#F4F1EA, #1B3B2B, #7D9080, #C86D44).",
+    "ATTENTION: NE PAS AJOUTER DE SECTION TARIFS (interdit selon les spécifications client).",
+    "Intégrer Lenis Smooth Scroll et des animations Framer Motion soignées au niveau Awwwards.",
+    "Développer le hero cinétique avec reveal ligne par ligne.",
+    "Créer le manifeste en 3 chapitres numérotés (01, 02, 03).",
+    "Afficher les 6 prestations dans un Bento Grid réactif : Coaching salle Fitness Park Béziers, Conseil Trail, Course à pied, Remise en forme, Coaching indiv/groupe, Cours collectifs (Burning, Cross Training, Hydroxyde).",
+    "Mettre en valeur le diplôme BPJEPS et le partenariat Fitness Park Béziers dans la section À Propos.",
+    "Créer un formulaire de contact fonctionnel avec validation (Nom, Email, Téléphone, Objectif, Message) et notifications Sonner toast.",
+    "Ajouter systématiquement tous les data-testid spécifiés pour chaque élément interactif et section.",
+    "Assurer un contraste parfait APCA / WCAG AA et une lisibilité impeccable."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. In frontend design, avoid AI slop: make creative, distinctive frontends that surprise and delight.",
+    "DO NOT use dark colors as gradients. Keep surfaces earthy, textured, and rich.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for navigation.",
+    "You MUST NOT apply universal transition (transition: all). Always specify target properties like transition-colors, transition-transform.",
+    "You MUST NOT center align the app container. Respect natural reading flow.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects.",
+    "Use generous padding and spacing (p-6, p-8, p-12, gap-8).",
+    "All key interactive elements MUST include data-testid attribute in kebab-case format.",
+    "Use Sonner for toast notifications on contact form submit."
+  ]
+}
