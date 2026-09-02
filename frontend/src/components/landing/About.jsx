@@ -4,7 +4,7 @@ import { Award, Handshake, MapPin } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
 const stats = [
-  { value: "BPJEPS", label: "Diplôme d'État" },
+  { value: "DEUST", label: "Métiers de la Forme" },
   { value: "6", label: "Disciplines coachées" },
   { value: "100%", label: "Programmes sur-mesure" },
   { value: "2", label: "Terrains : salle & nature" },
@@ -31,7 +31,7 @@ export default function About() {
                 <motion.img
                   data-testid="coach-portrait-image"
                   src="/images/coach-portrait.jpeg"
-                  alt="Portrait souriant de Popec, coach sportif diplômé BPJEPS, en extérieur"
+                  alt="Portrait souriant de Popec, coach sportif diplômé DEUST Métiers de la Forme, en extérieur"
                   style={{ y: imgY }}
                   className="w-full h-[115%] object-cover -mt-[7%]"
                   loading="lazy"
@@ -43,8 +43,8 @@ export default function About() {
               >
                 <Award size={22} className="text-ochre shrink-0" />
                 <div>
-                  <p className="font-display font-bold text-sm leading-tight">Diplômé BPJEPS</p>
-                  <p className="text-[11px] text-sand/70 font-mono uppercase tracking-widest">Brevet d'État</p>
+                  <p className="font-display font-bold text-sm leading-tight">Diplômé DEUST</p>
+                  <p className="text-[11px] text-sand/70 font-mono uppercase tracking-widest">Métiers de la Forme</p>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 text-base sm:text-lg text-clay leading-relaxed max-w-2xl">
-                Coureur passionné et coach diplômé BPJEPS, Popec se lance en indépendant avec une
+                Coureur passionné et coach diplômé DEUST Métiers de la Forme, Popec se lance en indépendant avec une
                 conviction simple : la performance naît du plaisir et de la régularité, pas de la
                 souffrance. De la salle aux sentiers, il construit des accompagnements exigeants,
                 bienveillants et taillés pour votre vie réelle.

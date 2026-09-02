@@ -23,8 +23,8 @@ const fade = {
 export default function Hero() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
-  const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
+  const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const imgScale = useTransform(scrollYProgress, [0, 1], [1.18, 1.28]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "45%"]);
 
   return (
@@ -48,7 +48,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-forest/20 bg-sanddeep px-4 py-1.5 text-xs font-mono uppercase tracking-[0.25em] text-forest"
             >
               <Award size={14} className="text-terracotta" />
-              Coach diplômé BPJEPS — Béziers
+              Coach diplômé DEUST · Métiers de la Forme — Béziers
             </span>
           </motion.div>
 
@@ -77,8 +77,8 @@ export default function Hero() {
             variants={fade}
             className="mt-6 max-w-xl text-base sm:text-lg text-clay leading-relaxed"
           >
-            Coaching running, trail et remise en forme — en pleine nature ou en salle chez
-            Fitness Park Béziers. Un accompagnement sur-mesure, exigeant et profondément humain.
+            Coaching running, trail et remise en forme, en pleine nature ou en salle
+            de sport. Un accompagnement sur-mesure, exigeant et dans la bonne humeur.
           </motion.p>
 
           <motion.div variants={fade} className="mt-9 flex flex-wrap items-center gap-4">
@@ -106,7 +106,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[6rem] aspect-[4/5] max-h-[62vh] w-full shadow-[0_40px_80px_-30px_rgba(27,59,43,0.45)]">
+          <div className="relative overflow-hidden rounded-[2rem] rounded-tr-[6rem] aspect-[4/5] max-h-[62vh] w-full shadow-[0_40px_80px_-30px_rgba(12,59,76,0.45)]">
             <motion.img
               data-testid="hero-trail-image"
               src={HERO_IMG}

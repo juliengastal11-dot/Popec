@@ -11,7 +11,7 @@ const objectives = [
   "Course à pied",
   "Remise en forme",
   "Coaching en salle — Fitness Park",
-  "Cours collectifs (Burning, Cross Training, Hydroxyde)",
+  "Cours collectifs (Burning, Cross, Hyrox)",
   "Autre projet",
 ];
 

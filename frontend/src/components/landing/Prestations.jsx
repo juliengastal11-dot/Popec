@@ -20,7 +20,7 @@ const services = [
     id: "trail",
     testId: "prestation-card-conseil-trail",
     icon: Mountain,
-    title: "Conseil & préparation trail",
+    title: "Conseils & préparation trail",
     place: "Grands espaces",
     text: "Plans d'entraînement trail, gestion du dénivelé, nutrition, stratégie de course. De votre premier 10 km nature à l'ultra.",
     tags: ["outdoor"],
@@ -62,7 +62,7 @@ const services = [
     testId: "prestation-card-cours-collectifs-burning-cross-hydroxyde",
     icon: Flame,
     title: "Cours collectifs",
-    place: "Burning · Cross Training · Hydroxyde",
+    place: "Burning · Cross · Hyrox",
     text: "Des formats signature à haute énergie : brûlez, transpirez, dépassez-vous en musique et en groupe.",
     tags: ["salle"],
     img: "/images/coach-sled-pull.jpeg",
@@ -126,7 +126,7 @@ export default function Prestations() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                className={`group relative ${s.span} rounded-3xl border border-forest/10 bg-sand overflow-hidden transition-shadow duration-500 hover:shadow-[0_30px_60px_-25px_rgba(27,59,43,0.35)]`}
+                className={`group relative ${s.span} rounded-3xl border border-forest/10 bg-sand overflow-hidden transition-shadow duration-500 hover:shadow-[0_30px_60px_-25px_rgba(12,59,76,0.35)]`}
               >
                 {s.img && (
                   <div className="relative h-44 overflow-hidden">

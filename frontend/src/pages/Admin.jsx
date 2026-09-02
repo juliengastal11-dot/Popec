@@ -77,7 +77,7 @@ export default function Admin() {
         <form
           data-testid="admin-login-form"
           onSubmit={login}
-          className="w-full max-w-md rounded-[2rem] border border-forest/10 bg-sanddeep p-9 shadow-[0_30px_60px_-25px_rgba(27,59,43,0.25)]"
+          className="w-full max-w-md rounded-[2rem] border border-forest/10 bg-sanddeep p-9 shadow-[0_30px_60px_-25px_rgba(12,59,76,0.25)]"
         >
           <div className="flex items-center gap-2.5 mb-8">
             <span className="w-10 h-10 rounded-full bg-forest text-sand flex items-center justify-center">

@@ -84,7 +84,7 @@ export default function Footer() {
         </p>
 
         <div className="border-t border-sand/10 mt-8 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-sand/40">
-          <span>© {new Date().getFullYear()} Popec Run — Coach diplômé BPJEPS</span>
+          <span>© {new Date().getFullYear()} Popec Run — Coach diplômé DEUST · Métiers de la Forme</span>
           <span>Fait pour ceux qui aiment suer dehors.</span>
         </div>
       </div>

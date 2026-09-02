@@ -6,9 +6,9 @@ const items = [
   "Fitness Park Béziers",
   "Remise en forme",
   "Cours collectifs Burning",
-  "Cross Training",
-  "Hydroxyde",
-  "Diplômé BPJEPS",
+  "Cross",
+  "Hyrox",
+  "Diplômé DEUST · Métiers de la Forme",
   "Course à pied",
 ];
 
@@ -24,7 +24,7 @@ export default function EditorialMarquee() {
             <span className="font-display font-bold uppercase tracking-wide text-sand/90 text-lg sm:text-xl whitespace-nowrap">
               {item}
             </span>
-            <Sparkle size={16} className="text-ochre shrink-0" />
+            <Sparkle size={16} className="text-aqua shrink-0" />
           </span>
         ))}
       </Marquee>
