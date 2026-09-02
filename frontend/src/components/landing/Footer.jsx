@@ -73,13 +73,6 @@ export default function Footer() {
                     {label}
                   </button>
                 ))}
-                  <a
-                    data-testid="footer-admin-link"
-                    href="/admin"
-                    className="text-left text-sm text-sand/70 transition-colors duration-300 hover:text-terracotta"
-                  >
-                    Espace coach
-                  </a>
               </div>
             </div>
             <div>

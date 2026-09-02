@@ -1,11 +1,8 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { ArrowRight, Loader2, MapPin } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { WA_BASE, WA_URL, WhatsAppIcon } from "@/components/landing/WhatsAppBubble";
-
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const objectives = [
   "Trail & outdoor",
@@ -25,30 +22,35 @@ export default function Contact() {
 
   const set = (key) => (e) => setForm({ ...form, [key]: e.target.value });
 
-  const submit = async (e) => {
+  const submit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    try {
-      await axios.post(`${API}/contact`, {
-        name: form.name.trim(),
-        email: form.email.trim(),
-        phone: form.phone.trim() || null,
-        objective: form.objective,
-        message: form.message.trim(),
+    const name = form.name.trim();
+    const email = form.email.trim();
+    const phone = form.phone.trim();
+    const message = form.message.trim();
+
+    if (!name || !email || !message) {
+      toast.error("Merci de compléter les champs obligatoires", {
+        description: "Nom, email et message sont requis avant l'envoi.",
       });
-      toast.success("Message prêt !", {
-        description: "WhatsApp s'ouvre : envoyez le message pour prévenir Popec directement.",
-      });
-      const text = `Bonjour Popec ! Je suis ${form.name.trim()}. Objectif : ${form.objective}. ${form.message.trim()}`;
-      window.open(`${WA_BASE}${encodeURIComponent(text)}`, "_blank");
-      setForm({ name: "", email: "", phone: "", objective: objectives[0], message: "" });
-    } catch (err) {
-      toast.error("Envoi impossible", {
-        description: "Vérifiez les champs du formulaire puis réessayez.",
-      });
-    } finally {
-      setLoading(false);
+      return;
     }
+
+    setLoading(true);
+    const lines = [
+      "Bonjour Popec !",
+      `Nom : ${name}`,
+      `Email : ${email}`,
+    ];
+    if (phone) lines.push(`Téléphone : ${phone}`);
+    lines.push(`Objectif : ${form.objective}`);
+    lines.push(`Message : ${message}`);
+    window.open(`${WA_BASE}${encodeURIComponent(lines.join("\n"))}`, "_blank");
+    toast.success("Message prêt !", {
+      description: "WhatsApp s'ouvre : envoyez le message pour prévenir Popec directement.",
+    });
+    setForm({ name: "", email: "", phone: "", objective: objectives[0], message: "" });
+    setLoading(false);
   };
 
   return (

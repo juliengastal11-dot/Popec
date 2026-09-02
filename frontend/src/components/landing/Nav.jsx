@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { InstagramIcon } from "@/components/SocialIcons";
 import { scrollToSection } from "@/pages/Landing";
+import { WA_BASE } from "@/components/landing/WhatsAppBubble";
+
+const openBilanWhatsApp = () => {
+  const text = "Bonjour Popec ! Je souhaiterais réserver un bilan pour démarrer un coaching.";
+  window.open(`${WA_BASE}${encodeURIComponent(text)}`, "_blank");
+};
 
 const links = [
   { id: "manifeste", label: "Manifeste", testId: "nav-link-manifesto" },
@@ -72,7 +78,7 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button"
-            onClick={() => go("contact")}
+            onClick={openBilanWhatsApp}
             className="ml-2 rounded-full bg-aqua text-forest text-sm font-semibold px-6 py-2.5 transition-all duration-300 hover:bg-[#7df1ff] hover:scale-[1.03] active:scale-95"
           >
             Réserver un bilan
@@ -103,7 +109,10 @@ export default function Nav() {
           ))}
           <button
             data-testid="nav-cta-contact-button-mobile"
-            onClick={() => go("contact")}
+            onClick={() => {
+              setOpen(false);
+              openBilanWhatsApp();
+            }}
             className="rounded-full bg-aqua text-forest font-semibold px-6 py-3 mt-2"
           >
             Réserver un bilan
