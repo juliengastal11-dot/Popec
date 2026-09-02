@@ -53,7 +53,7 @@ export default function About() {
           <div className="lg:col-span-7">
             <Reveal>
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-terracotta font-mono">
-                Oh fait ! Je ne me suis même pas présenté
+                Au fait ! Je ne me suis même pas présenté
               </span>
               <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-forest mt-4 leading-[1.1]">
                 Popec, un coach de terrain avant tout.
