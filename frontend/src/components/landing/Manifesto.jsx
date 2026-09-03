@@ -7,7 +7,7 @@ const chapters = [
     num: "01",
     testId: "manifesto-chapter-01",
     title: "La nature comme terrain de jeu",
-    text: "Sentiers, crêtes, forêts : l'extérieur est la plus belle des salles. Le trail et la course à pied apprennent à lire le terrain, gérer l'effort et respirer. Chaque sortie est une aventure, chaque dénivelé une leçon.",
+    text: "Du single track technique aux lignes de crête, la course en milieu naturel exige précision et rigueur. Analyse du relief, optimisation du rythme respiratoire, maîtrise des descentes et choix du matériel : chaque kilomètre parcouru permet d'affiner sa foulée et de maximiser son efficacité énergétique face aux éléments.",
     img: "/images/nature-trail.jpeg",
     alt: "Pause en haut d'un sommet, vue sur la vallée après une sortie trail",
     tag: "Outdoor",
