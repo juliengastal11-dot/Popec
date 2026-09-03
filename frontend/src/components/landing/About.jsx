@@ -56,7 +56,7 @@ export default function About() {
                 Au fait ! Je ne me suis même pas présenté
               </span>
               <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-forest mt-4 leading-[1.1]">
-                Popec, un coach de terrain avant tout.
+                Popec à votre service ! Coach de terrain avant tout.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
