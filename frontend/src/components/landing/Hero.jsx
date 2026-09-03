@@ -74,9 +74,9 @@ export default function Hero() {
             variants={fade}
             className="mt-6 max-w-xl text-base sm:text-lg text-sand/85 leading-relaxed"
           >
-            Coaching running, trail, entraînement fonctionnel, Hyrox. En pleine nature
-            ou en salle de sport. Un accompagnement sur-mesure et exigeant, mais
-            toujours dans la bonne humeur.
+            Coaching endurance, Musculation, entraînement hybride. En salle de sport
+            ou pleine nature. Un accompagnement sur-mesure, toujours dans la bonne
+            humeur.
           </motion.p>
 
           <motion.div variants={fade} className="mt-9 flex flex-wrap items-center justify-center lg:justify-start gap-4">
