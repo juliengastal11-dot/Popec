@@ -38,10 +38,10 @@ export default function Nav() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-      className={`fixed top-0 left-0 right-0 z-[80] transition-[background-color,box-shadow,border-color] duration-500 border-b ${
+      className={`fixed top-0 left-0 right-0 z-[80] transition-[background-color,box-shadow,border-color] duration-500 border-b bg-white/75 backdrop-blur-xl ${
         scrolled
-          ? "bg-sand/85 backdrop-blur-xl border-forest/10 shadow-[0_8px_30px_rgba(15,76,99,0.06)]"
-          : "bg-transparent border-transparent"
+          ? "border-forest/10 shadow-[0_8px_30px_rgba(15,76,99,0.06)]"
+          : "border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between">
